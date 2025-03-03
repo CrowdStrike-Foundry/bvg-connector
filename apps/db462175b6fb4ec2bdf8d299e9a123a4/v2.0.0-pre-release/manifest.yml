@@ -1,0 +1,37 @@
+app_id: db462175b6fb4ec2bdf8d299e9a123a4
+name: BVG Connector
+description: This is the public transportation system of Berlin
+logo: https://assets.falcon.crowdstrike.com/apps/db462175b6fb4ec2bdf8d299e9a123a4/logo.png
+vendor: BVG
+vendor_products:
+    - Trains
+use_case: Utilities
+manifest_version: ""
+ignored: []
+ui:
+    homepage: ""
+    extensions: []
+    pages: {}
+    dashboards: {}
+    navigation: {}
+api_integrations: []
+rtr_scripts: []
+collections: []
+auth:
+    scopes: []
+    permissions: {}
+    roles: []
+functions: []
+workflows: []
+parsers:
+    - name: bvg-train-telemetry
+      description: this is parser parses bvg trains data like temperature and speed.
+      path: parsers/bvg-train-telemetry/script.txt
+      fields_to_tag: []
+      fields_to_remove: []
+      is_data_connector: true
+      tests_path: ""
+logscale:
+    saved_searches: []
+lookup_files: []
+docs: {}
